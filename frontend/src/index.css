@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #0b0907;
+    background-image: 
+      radial-gradient(circle at 50% 0%, rgba(128, 0, 32, 0.22) 0%, transparent 65%),
+      radial-gradient(circle at 100% 100%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+      radial-gradient(circle at 0% 100%, rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+    background-attachment: fixed;
+    color: #f8f4ea;
+    font-family: 'Marcellus', 'Georgia', serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel', serif;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Custom Manuscript & Ancient Vedic UI Components */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #fff3c4 0%, #d4af37 45%, #ffd700 70%, #aa7c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.crimson-gradient-text {
+  background: linear-gradient(135deg, #ff8090 0%, #d92038 50%, #800020 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ornate-border {
+  border: 1px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.15), inset 0 0 12px rgba(212, 175, 55, 0.06);
+}
+
+.ornate-border-glow {
+  border: 1px solid rgba(212, 175, 55, 0.7);
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.35), inset 0 0 15px rgba(212, 175, 55, 0.12);
+}
+
+.parchment-card {
+  background: linear-gradient(180deg, #1f1a14 0%, #15110d 100%);
+  border: 1px solid rgba(212, 175, 55, 0.28);
+  position: relative;
+}
+
+.parchment-card::before {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  right: 3px;
+  bottom: 3px;
+  border: 1px solid rgba(212, 175, 55, 0.12);
+  pointer-events: none;
+}
+
+/* Ancient Golden Button */
+.btn-vedic-gold {
+  background: linear-gradient(180deg, #d4af37 0%, #a47a1b 100%);
+  color: #0d0b08;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border: 1px solid #ffd700;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+  transition: all 0.25s ease;
+}
+
+.btn-vedic-gold:hover {
+  background: linear-gradient(180deg, #ffd700 0%, #b8860b 100%);
+  box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
+  transform: translateY(-2px);
+}
+
+.btn-vedic-crimson {
+  background: linear-gradient(180deg, #990022 0%, #590013 100%);
+  color: #fbf7ee;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  box-shadow: 0 4px 15px rgba(128, 0, 32, 0.4);
+  transition: all 0.25s ease;
+}
+
+.btn-vedic-crimson:hover {
+  background: linear-gradient(180deg, #b8002a 0%, #78001a 100%);
+  border-color: #ffd700;
+  box-shadow: 0 0 25px rgba(184, 0, 42, 0.6);
+  transform: translateY(-2px);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0b0907;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a2e22;
+  border-radius: 4px;
+  border: 1px solid rgba(212, 175, 55, 0.3);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a4734;
+}
